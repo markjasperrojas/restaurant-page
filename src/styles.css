@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg-color: rgba(0, 0, 0, 0.8);
+}
+
 html {
   font-size: 62.5%;
 }
@@ -39,6 +43,20 @@ nav {
 
 #content {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  width: 50rem;
+  height: 50rem;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 600;
 }
 
 /* === FOOTER === */
@@ -55,7 +73,7 @@ footer {
 
 header,
 footer {
-  background: rgba(0, 0, 0, 0.8);
+  background: var(--bg-color);
 }
 
 button {
