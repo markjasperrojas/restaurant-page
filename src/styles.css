@@ -6,6 +6,7 @@
 
 :root {
   --bg-color: rgba(0, 0, 0, 0.8);
+  --white: #ffffff;
 }
 
 html {
@@ -21,14 +22,14 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
-  font-size: 1.5rem;
+  background-attachment: fixed;
+  color: var(--white);
 }
 
 /* === HEADER === */
 
 header {
-  padding: 3rem;
+  padding: 2rem 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,7 +37,15 @@ header {
 
 nav {
   display: flex;
-  gap: 1.5rem;
+  gap: 2.5rem;
+}
+
+button {
+  font-size: 1.8rem;
+  font-weight: 600;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--white);
 }
 
 /* === CONTENT === */
@@ -48,25 +57,66 @@ nav {
   align-items: center;
 }
 
+/* for menu */
+
 .menu {
-  width: 50rem;
-  height: 50rem;
+  display: grid;
+  grid-template-columns: repeat(2, 40rem);
+  grid-template-rows: repeat(2, 25rem);
+  gap: 3rem;
+}
+
+.card {
+  padding: 3rem;
   background: var(--bg-color);
+  border-radius: 1rem;
   display: flex;
-  justify-content: center;
   align-items: center;
-  font-size: 3rem;
+  gap: 1.5rem;
+}
+
+.card img {
+  width: 10rem;
+}
+
+.prod-name {
+  font-size: 2.5rem;
   font-weight: 600;
+}
+
+.card div p:nth-child(2) {
+  font-size: 1.5rem;
+}
+
+.card div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 /* === FOOTER === */
 
+#github-logo {
+  width: 3rem;
+}
+
+#github-logo:hover {
+  transform: scale(1.05);
+}
+
 footer {
-  padding: 2rem;
+  padding: 1rem;
+  font-size: 1.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+
+footer p a {
+  text-decoration: none;
+  color: var(--white);
 }
 
 /* === GLOBAL STYLES === */
@@ -74,8 +124,4 @@ footer {
 header,
 footer {
   background: var(--bg-color);
-}
-
-button {
-  font-size: inherit;
 }
