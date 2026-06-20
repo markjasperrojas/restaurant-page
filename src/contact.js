@@ -19,11 +19,11 @@ export function createAndRenderContact() {
     if (i === 0) {
       image.src = telImage;
       image.alt = "Telephone image";
-      p.textContent = "123456789";
+      p.textContent = "+63 912 345 6789";
     } else {
       image.src = addressImage;
       image.alt = "House image";
-      p.textContent = "Dolores National Highschool";
+      p.textContent = "123 Brew Street, Capitol Site";
     }
 
     div.appendChild(image);

@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  font-family: system-ui, sans-serif;
+  font-family: "Pixelify Sans", sans-serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -41,6 +41,7 @@ nav {
 }
 
 button {
+  font-family: inherit;
   font-size: 1.8rem;
   font-weight: 500;
   border: none;
@@ -48,9 +49,15 @@ button {
   color: var(--white);
 }
 
+#logo {
+  width: 6rem;
+  margin-left: 5rem;
+}
+
 /* === CONTENT === */
 
 #content {
+  padding: 3rem 0;
   flex: 1;
   display: flex;
   justify-content: center;
@@ -109,7 +116,7 @@ button {
 }
 
 .contact div div img {
-  width: 7rem;
+  width: 5rem;
 }
 
 .contact div div {
@@ -152,6 +159,10 @@ footer {
 footer p a {
   text-decoration: none;
   color: var(--white);
+}
+
+#copyright {
+  font-family: "Silkscreen", sans-serif;
 }
 
 /* === GLOBAL STYLES === */
