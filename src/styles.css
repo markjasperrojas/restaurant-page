@@ -95,6 +95,41 @@ button {
   gap: 2rem;
 }
 
+/* for contact */
+
+.contact {
+  padding: 3rem;
+  width: 83rem;
+  height: 53rem;
+  background: var(--bg-color);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact div div img {
+  width: 7rem;
+}
+
+.contact div div {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  gap: 1rem;
+}
+
+.map {
+  width: 40rem;
+  height: 40rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
 /* === FOOTER === */
 
 #github-logo {
