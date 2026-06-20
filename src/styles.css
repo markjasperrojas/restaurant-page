@@ -6,6 +6,7 @@
 
 :root {
   --bg-color: rgba(0, 0, 0, 0.8);
+  --bg2-color: rgba(255, 255, 255, 0.1);
   --white: #ffffff;
 }
 
@@ -40,23 +41,23 @@ nav {
   gap: 1rem;
 }
 
-button {
+nav button {
   padding: 1rem;
   font-family: inherit;
   font-size: 1.8rem;
   font-weight: 500;
   border: none;
-  background-color: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.4);
   color: var(--white);
 }
 
-button:hover {
+nav button:hover {
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.1);
+  background: var(--bg2-color);
 }
 
 .active {
-  background-color: rgba(255, 255, 255, 0.1);
+  background: var(--bg2-color);
 }
 
 #logo {
@@ -67,7 +68,7 @@ button:hover {
 /* === CONTENT === */
 
 #content {
-  padding: 3rem 0;
+  padding-bottom: 3rem;
   flex: 1;
   display: flex;
   justify-content: center;
@@ -131,7 +132,7 @@ button:hover {
 }
 
 .contact div div img {
-  width: 5rem;
+  width: 6rem;
 }
 
 .contact div div {
@@ -185,4 +186,21 @@ footer p a {
 header,
 footer {
   background: var(--bg-color);
+}
+
+svg {
+  width: 3rem;
+  fill: rgb(205, 197, 197);
+  margin: 1rem 0 0 1rem;
+}
+
+svg:hover {
+  cursor: pointer;
+}
+
+#music-btn {
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  width: 3rem;
+  height: 3rem;
 }
